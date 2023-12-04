@@ -1,0 +1,416 @@
+*{
+    margin:0;
+    padding:0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    color:inherit;
+    text-decoration: inherit;
+}
+
+body{
+    text-align: center;
+    font-family: sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    margin-top: 10vh;
+    height: 25vh !important;
+    background: url(../img/inicio/fondo2.jpg) no-repeat center;
+    background-size: cover;
+    opacity: 0.93;    
+}
+
+.title{
+    margin-bottom: 40px;
+    font-size: 80px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #f9f9f9;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: Georgia, 'Times New Roman', Times, serif  ;
+}
+
+p {
+    margin-bottom: 40px;
+    font-size: 25px;
+    color:white;
+    padding: 0 100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.fondo{
+    background-image: url(../img/inicio/fondo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 50em;
+    
+}
+
+.flecha{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    padding: 20px;
+    z-index: 100;
+}
+
+
+.barra{
+    font-family: "Brush Script MT";
+    width: 10%;
+    height: 9%;
+    position: fixed;
+    transform: .4s all;
+    z-index: 100;
+}
+
+.barra ul{
+    padding: 0px;
+    text-align: center;
+}
+
+.barra li{
+    transition: .3s all;
+}
+
+.barra a{
+    text-decoration: none;
+    list-style: none;
+    transition: .3s all;
+    font-size: 0px;
+    padding: 0px;
+}
+
+.barra h2{
+    text-align: center;
+    color: black;
+    padding: 7px;
+    padding-bottom: 7px;
+    font-size: 0px;
+}
+
+.barra img{
+    padding-top: 25px;
+    padding-left: 10px;
+    height: 80px;
+}
+
+.barra:hover{
+    width: 13%;
+    margin-left: 10px;
+    padding:0;
+    height: auto;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    float:left;
+}
+
+.barra:hover h2{
+    padding: 0;
+    margin: 0;
+    padding-top: 15px;
+    font-size: 50px;
+}
+
+.barra:hover a{
+    font-size: 25px;
+    color: black;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.barra:hover img{
+    height: 0px;
+}
+
+.barra:hover li{
+    border-top: 1px solid black;
+    width: 100%;
+}
+
+.barra:hover ul:last-of-type{
+    border-bottom: 1px solid black;
+}
+
+.barra:hover a:hover{
+    font-size: 30px;
+    padding: 13px 0px;/*30 0 30 0*/
+    background-color: #FED7DA;
+
+}
+
+
+.caja {
+    text-align: center;
+    font-family: sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+.promociones {
+    padding: 20px;
+    background: #F2F2F2;
+    margin-top: 60px;
+    height: 80vh;
+    margin-bottom: 0;
+}
+
+.unidades {
+    padding: 20px;
+    background: #F2F2F2;
+    margin-top: 0; /* Ajustado a 0 para que el .unidades comience desde la parte superior */
+    align-items:normal; /* Asegúrate de tener un contenedor padre con display: flex para que align-items funcione correctamente */
+    height: auto; /* Cambiado a auto para que se ajuste al contenido */
+    margin-bottom: 20px; /* Ajustado según sea necesario */
+}
+
+.unidades h2 {
+    padding: 20px;
+    background: #F2F2F2;
+    margin: 0; /* Ajustado a 0 para eliminar cualquier margen predeterminado */
+}
+
+.unidades p  {
+    padding: 20px;
+    background: #F2F2F2;
+    margin: 0; /* Ajustado a 0 para eliminar cualquier margen predeterminado */
+    color: #000;
+    text-align: justify; /* Para justificar el texto */
+    font-size: 14px; /* Tamaño de la fuente en 14 píxeles */
+} 
+.promociones p{
+    font-size: 35px;
+    color:black;
+    margin-bottom: 100px;
+}
+
+.parrafo{
+    text-align: justify;
+    font-family: sans-serif;
+    display: block ;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    background: #F2F2F2;
+    margin-top: 0; /* Ajustado a 0 para que el .unidades comience desde la parte superior */
+    align-items:normal; /* Asegúrate de tener un contenedor padre con display: flex para que align-items funcione correctamente */
+    height: auto; /* Cambiado a auto para que se ajuste al contenido */
+    margin-bottom: 20px; /* Ajustado según sea necesario */
+    box-shadow: 2px 2px 4px #000;
+}
+
+.parrafo p{
+    display: block;
+    font-size: 16px;
+    padding: 0;
+}
+
+.lista{
+    display:block; 
+    
+ 
+}
+
+.lista ul{
+    list-style-type:circle; /* Elimina los marcadores de la lista, ajusta según sea necesario */
+    padding-top: 10px;
+    padding-left: 20px; 
+    margin: 0px; /* Elimina el margen predeterminado de la lista */
+    display:block; 
+      
+}
+.lista li{
+    text-align: left;
+    padding-top: 10px;
+}
+
+.lista div{
+    padding: 0;
+    margin: 0;
+}
+
+.lista-container {
+    display: block; /* Asegura que el contenedor sea de bloque y ocupe toda la anchura disponible */
+    margin-top: 10px; /* Ajusta según sea necesario para la separación entre el texto y la lista */
+}
+
+@media(max-width:760px){
+    .title{
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+
+    .barra:hover{
+        height: 71.5%;
+    }
+
+    .barra:hover h2{
+        font-size: 30px;
+    }
+
+    .barra:hover a{
+        font-size: 15px;
+    }
+
+    .barra:hover a:hover{
+        font-size: 20px;
+    }
+}
+
+.card{
+    position: relative;
+    width: 300px;
+    height: 100px;
+    margin:20px;
+    background: none;
+    border: none;
+}
+
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+    background-color: #000dff;
+    color: white;
+}
+
+.card .front a {
+    position: inherit ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:x-large;
+}
+
+.card .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    right: 0px;
+}
+
+.card .front a{
+    position: grid center;
+}
+
+.card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: #537334;
+    color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .back h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.card .back .link{
+    border-top: solid 1px #FED7DA;
+    height: 50px;
+    line-height: 30px;
+}
+
+.card .back .link a{
+    display: block;
+    color: #F2F2F2;
+}
+
+.card .back .h3{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card .back p{
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+.card .back img{
+   width: 200px;
+   height: 250px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 10px;
+   border-radius: 50px;
+   box-shadow: 0 5px 10px #000000;
+}
+
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+.about {
+    background: #171717;
+}
+
+.content {
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    width: 100%;
+    margin: 10rem auto 0 auto;
+}
+
+.about {
+    background: #171717;
+}
+
+.about img{
+    height: 250px;
+}
+
+.footer{
+    background-color: grey;
+    padding: 1em 0;
+    text-align: center;
+}
+
+
+
+  
+  

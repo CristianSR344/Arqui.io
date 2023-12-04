@@ -1,0 +1,184 @@
+
+.principal {
+    float: left;
+    color: #FED7DA;
+    text-align: center;
+    border: double;
+    font-size: larger;
+}
+
+.principal2 {
+    float: left;
+    color: #FED7DA;
+    text-align: center;
+    border: double;
+    font-size: larger;
+}
+
+
+/*En tu hoja de estilos */
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+header {
+    background-color: #FED7DA;
+    text-align: center;
+    font-size: 65px;
+    color: white;
+    border-radius: 10px;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 50%;
+    background-color: #f1f1f1;
+    height: 300px;
+}
+
+nav {
+    float: right;
+    width: 45%;
+    height: 550px;
+    background: #FED7DA;
+    padding: 0px;
+}
+
+.nav2 {
+    float: left;
+    width: 45%;
+    height: 650px;
+    background: #FED7DA;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.nav3 {
+    float: left;
+    width: 95%;
+    height: 620px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    float: left;
+    font: bold;
+    font-family: "Brush Script MT";
+    margin-bottom: 0;
+    margin-left: 20px;
+    font-size: 40px;
+}
+
+h2 {
+    float: left;
+    font: menu;
+    font-family: "Brush Script MT";
+    margin-top: 0%;
+    margin-bottom: 0;
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+.precio {
+    float: right;
+    font: bold;
+    font-family: "Brush Script MT";
+    margin-top: 20px;
+    margin-right: 5px;
+    font-size: 45px;
+}
+
+.texto {
+    font-size: large;
+    width: 90%;
+    border-bottom: 0%;
+    float: left;
+    margin-left: 20px;
+}
+
+.galeria {
+    float: right;
+    width: 49%;
+    height: 650px;
+    /* only for demonstration, should be removed */
+    background: #FED7DA;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.boton {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 80px;
+	background: #f9f9f9;
+	color: #141414;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	border: none;
+	cursor: pointer;
+	text-transform: uppercase;
+	transition: .3s ease all;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+    margin-top: 0;
+}
+.contenedor {
+	width: 1000px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.contenedor h1 {
+	font-size: 58px;
+	font-weight: 500;
+	text-align: center;
+	margin-bottom: 80px;
+	text-transform: uppercase;
+	color: #141414;
+	border: 5px solid #141414;
+	padding: 5px 10px;
+	display: inline-block;
+}
+
+.contenedor-botones {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 40px;
+}
+
+.boton span {
+	position: relative;
+	z-index: 2;
+	transition: .3s ease all;
+}
+.boton.uno::after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: #FED7DA;
+	position: absolute;
+	z-index: 1;
+	top: -80px;
+	left: 0;
+	transition: .3s ease-in-out all;
+}
+
+.boton.uno:hover::after {
+	top: 0;
+}
+
